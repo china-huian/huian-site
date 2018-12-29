@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* 初始化CSS */
+html {font:14px "微软雅黑";color:#333;}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {margin:0;padding:0;}
+img {display:block;border:none;}
+em ,i {font-style:normal;font-weight:normal;}
+ul, ol, li {list-style:none;}
+h1, h2, h3, h4, h5, h6 {font-size:inherit;font-weight:normal;}
+input, select, textarea, button {outline:none;margin:0;padding:0;vertical-align:middle;font-family:"微软雅黑";font-size:14px;color:#4c4c4c;}
+span{display: block}
+a {text-decoration:none;color:#333;}
+a:hover {text-decoration:none;color:#333;}
+
+.fd1{float: left;}
+.fd2{float: right;}
+
+.zj {clear:both;}
+.fj:after {content:'';display:block;height:0;visibility:hidden;clear:both;}
+/* 初始化CSS END */
+
+
+/* 公共的样式 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
