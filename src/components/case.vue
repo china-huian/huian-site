@@ -3,7 +3,7 @@
     <div class="topbox">
       <div class="body">
         <a href="index.html">
-          <img src="../assets/logo.svg" class="logo fd1">
+          <img src="../assets/logo.png" class="logo fd1">
         </a>
         <button class="hor-nav-toggler" type="button" v-show="navx" @click="navshow">
           <span class="line"></span>
@@ -15,7 +15,7 @@
             <a href="javascript:;" :class="{a:a1,nava:navx}" @click="btn1('1')">首页</a>
           </li>
           <li :class="{navli:navx}">
-            <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于惠安</a>
+            <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于慧安</a>
           </li>
           <li :class="{navli:navx}">
             <a href="javascript:;" :class="{a:a3,nava:navx}" @click="btn1('3')">IT服务</a>

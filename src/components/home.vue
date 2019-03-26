@@ -5,7 +5,7 @@
       <div class="topbox">
         <div class="body">
           <a href="index.html">
-            <img src="../assets/logo.svg" class="logo fd1">
+            <img src="../assets/logo.png" class="logo fd1">
           </a>
           <button class="hor-nav-toggler" type="button" v-show="navx" @click="navshow">
             <span class="line"></span>
@@ -17,7 +17,7 @@
               <a href="javascript:;" :class="{a:a1,nava:navx}" @click="btn1('1')">首页</a>
             </li>
             <li :class="{navli:navx}">
-              <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于惠安</a>
+              <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于慧安</a>
             </li>
             <li :class="{navli:navx}">
               <a href="javascript:;" :class="{a:a3,nava:navx}" @click="btn1('3')">IT服务</a>
@@ -77,11 +77,11 @@
         <em>根据用户需求，进行个性化的软件开发， 从需求到验收的“过程化”开发服务。</em>
       </div>
     </div>
-    <!-- 关于惠安 -->
+    <!-- 关于慧安 -->
     <div class="about fj" :class="{about1:about1,about2:about2}">
       <div class="left" :class="{fd1:about1,aboutleft:about2}">
         <div class="abouttitle animated delay-1s" :class="{bounceInUp:about}">
-          <h4>关于惠安</h4>
+          <h4>关于慧安</h4>
           <span class="blobk"></span>
         </div>
         <div
@@ -161,7 +161,7 @@
               <span class="servicetxt">展示企业形象
                 <br>宣传产品与服务
               </span>
-              <button class="btn">更多</button>
+              <button class="btn" @click="Jump('1')">更多</button>
             </div>
             <div
               :class="{fd1:service,servicew:service,servicew2:service2,service3:service3}"
@@ -190,7 +190,7 @@
               <span class="servicetxt">准确把握产品定位及传播受众需求
                 <br>完美实现您的想法
               </span>
-              <button class="btn">更多</button>
+              <button class="btn" @click="Jump('2')">更多</button>
             </div>
             <div
               :class="{fd1:service,servicew:service,servicew2:service2,service3:service3}"
@@ -238,7 +238,7 @@
               <span class="servicetxt">建立一个高质量、国际化的网站
                 <br>成为企业的销售利器
               </span>
-              <button class="btn">更多</button>
+              <button class="btn" @click="Jump('3')">更多</button>
             </div>
           </div>
           <div :class="{fd2:service,service2:service2,service1:service,service4:service3}">
@@ -267,7 +267,7 @@
               <span class="servicetxt">高质量、灵活、易管控的数据管理
                 <br>更高效管理数据架构
               </span>
-              <button class="btn">更多</button>
+              <button class="btn" @click="Jump('4')">更多</button>
             </div>
           </div>
         </div>
@@ -333,7 +333,7 @@
             @mouseenter="team('1')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t1.jpg" class="servicebj">
+            <!-- <img src="../assets/t1.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show1"
@@ -351,7 +351,7 @@
             @mouseenter="team('2')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t2.jpg" class="servicebj">
+            <!-- <img src="../assets/t2.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show2"
@@ -371,7 +371,7 @@
             @mouseenter="team('3')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t3.jpg" class="servicebj">
+            <!-- <img src="../assets/t3.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show3"
@@ -389,7 +389,7 @@
             @mouseenter="team('4')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t4.jpg" class="servicebj">
+            <!-- <img src="../assets/t4.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show4"
@@ -411,7 +411,7 @@
             @mouseenter="team('5')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t5.jpg" class="servicebj">
+            <!-- <img src="../assets/t5.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show5"
@@ -429,7 +429,7 @@
             @mouseenter="team('6')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t6.jpg" class="servicebj">
+            <!-- <img src="../assets/t6.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show6"
@@ -449,7 +449,7 @@
             @mouseenter="team('7')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t7.jpg" class="servicebj">
+            <!-- <img src="../assets/t7.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show7"
@@ -467,7 +467,7 @@
             @mouseenter="team('8')"
             @mouseleave="servicehide2"
           >
-            <img src="../assets/t8.jpg" class="servicebj">
+            <!-- <img src="../assets/t8.jpg" class="servicebj"> -->
             <div
               class="Eject animated delay-1s"
               v-show="show8"
@@ -493,14 +493,14 @@
     >
       <div class="Mask"></div>
       <div :class="{imgbox:imgbox,imgbox2:imgbox2}" :style="{top:top+'px'}">
-        <img src="../assets/t1.jpg" class="bj Albumimg">
+        <!-- <img src="../assets/t1.jpg" class="bj Albumimg">
         <img src="../assets/t2.jpg" class="bj Albumimg">
         <img src="../assets/t3.jpg" class="bj Albumimg">
         <img src="../assets/t4.jpg" class="bj Albumimg">
         <img src="../assets/t5.jpg" class="bj Albumimg">
         <img src="../assets/t6.jpg" class="bj Albumimg">
         <img src="../assets/t7.jpg" class="bj Albumimg">
-        <img src="../assets/t8.jpg" class="bj Albumimg">
+        <img src="../assets/t8.jpg" class="bj Albumimg"> -->
       </div>
     </div>
     <br>
@@ -608,10 +608,10 @@ export default {
       height: (document.documentElement.clientWidth / 10) * 4,
       Rotation: [
         {
-          title: "惠安科技欢迎您",
+          title: "慧安科技欢迎您",
           txt: "您在互联网领域的开发合作伙伴",
           uri: require("../assets/banner1.jpg"),
-          btn: "惠安欢迎您"
+          btn: "慧安欢迎您"
         },
         {
           title: "我们的得服务",
@@ -626,7 +626,7 @@ export default {
       wid: false,
       widx: true,
       jt: false,
-      // 关于惠安
+      // 关于慧安
       about1: true,
       about2: false,
       aboutbj1: true,
@@ -1390,7 +1390,8 @@ export default {
   background: #fff;
 }
 .logo {
-  margin: 2em 2em;
+  margin: 0 2em;
+  width: 10%;
 }
 .body {
   min-width: 992px;
@@ -1540,7 +1541,7 @@ h4 {
   width: 15%;
 }
 
-/* 关于惠安 */
+/* 关于慧安 */
 .about {
   margin: 6em auto;
 }
@@ -1588,7 +1589,7 @@ h4 {
 .ba {
   background: #27a8b4;
 }
-/* 关于惠安兼容 */
+/* 关于慧安兼容 */
 .abouttxt1 {
   width: 40%;
 }

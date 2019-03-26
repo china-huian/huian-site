@@ -3,7 +3,7 @@
     <div class="topbox">
       <div class="body">
         <a href="index.html">
-          <img src="../assets/logo.svg" class="logo fd1">
+          <img src="../assets/logo.png" class="logo fd1">
         </a>
         <button class="hor-nav-toggler" type="button" v-show="navx" @click="navshow">
           <span class="line"></span>
@@ -15,7 +15,7 @@
             <a href="javascript:;" :class="{a:a1,nava:navx}" @click="btn1('1')">首页</a>
           </li>
           <li :class="{navli:navx}">
-            <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于惠安</a>
+            <a href="javascript:;" :class="{a:a2,nava:navx}" @click="btn1('2')">关于慧安</a>
           </li>
           <li :class="{navli:navx}">
             <a href="javascript:;" :class="{a:a3,nava:navx}" @click="btn1('3')">IT服务</a>
@@ -36,15 +36,15 @@
     <!-- 荣誉证书 -->
     <div :class="{main:main1,main2:main2}">
       <div class="title" :class="{fj:main1}">
-        <h2 :class="{fd1:main1}">关于朗创</h2>
-        <div :class="{fd2:main1}">首页 / 关于朗创</div>
+        <h2 :class="{fd1:main1}">关于慧安</h2>
+        <div :class="{fd2:main1}">首页 / 关于慧安</div>
       </div>
       <div class="book" :class="{book2:book2}">
         <div
           class="animated delay-1s"
           :class="{bookleft1:bookleft1,bookleft2:bookleft2,bounceInLeft:max}"
         >
-          <h3>关于朗创</h3>
+          <h3>关于慧安</h3>
           <span class="blobk"></span>
           <p>吉林省朗创科技有限公司是一家高新技术应用领域中从事专业应用系统开发、信息安全服务的高新技术企业。 总部设立在长春，业务范围涵盖软件开发与维护、移动端APP、大型Java、Web集成等项目的开发，成功案例百余起。 在遍布全国的业内公司中，建立了广泛的软件技术人才培养及输送体系，是通信、银行、金融、教育、医疗等行业重要的IT综合服务提供商和战略合作伙伴。</p>
           <p>朗创科技核心开发团队及管理高层均毕业于吉林大学计算机科学与技术学院，其中博士3人，硕士6人。近百人的员工团队， 具备行业工作经验10年以上员工12人，工作经验5年以上20余人。公司先后与吉林大学、长春理工大学、长春工业大学等高校建立实习基地，达成深度战略合作协议。</p>
